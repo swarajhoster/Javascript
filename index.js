@@ -178,5 +178,4 @@
 let myName = "swaraj kumar";
 console.log(myName.length);
 
-console.log("now it is updated now !");
-console.log('yes');
+
