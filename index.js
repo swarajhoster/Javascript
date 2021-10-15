@@ -175,7 +175,14 @@
 
 // How to find the length of the string
 // using .length() method
-let myName = "swaraj kumar";
-console.log(myName.length);
+// let myName = "swaraj kumar";
+// console.log(myName.length);
+
+//! Finding String in a string (caseSensitive)
+//! using indexOf() method, and if not found returns -1
+
+// const bioData = "i am swaraj kumar";
+// console.log(bioData.indexOf("am"));
+
 
 
