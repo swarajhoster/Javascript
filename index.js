@@ -178,11 +178,43 @@
 // let myName = "swaraj kumar";
 // console.log(myName.length);
 
+
+
+
+
+
 //! Finding String in a string (caseSensitive)
 //! using indexOf() method, and if not found returns -1
 
 // const bioData = "i am swaraj kumar";
 // console.log(bioData.indexOf("am"));
 
+//! using search() method, and if not found returns -1
+// but cant pass the second aurgument, and the index number, from were to start
 
+// const bioData = "i am swaraj kumar";
+// console.log(bioData.search("am"));
 
+// Extracting String parts
+// There are three methods for exreacting a part of a string:
+
+// slice(start, end)
+// substring(start,end)
+// substr(start,length)
+
+//! Slice() methodslice(start, end)
+// he first number will be startign number and last will be the ending number
+
+// var str = "apple,mango,kiwi";
+// let res = str.slice(0,4)
+// console.log(res);
+
+// todo: challege time
+// To create a application, in which after 280  charaters it will not print, like youtube description.
+
+let myTweets =
+  "Lorem ipsum dolor sit amet consectetur  adipisicing elit. Tempora omnis nulla culpa corporis natus expedita repellendus, adipisci iste veniam officia minus hic explicabo qui sunt vero ratione deleniti. Ab dolorum vitae adipisci? f jdfjhfbdf dfbvdshhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh Inventore, distinctio. now over guys";
+
+let tweetsFunc = myTweets.slice(0, 280); //! 0-280 = 280, coz from 0
+console.log(tweetsFunc);
+console.log(tweetsFunc.length);
