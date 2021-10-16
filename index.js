@@ -1,4 +1,3 @@
-
 //! In `` we can add unlimited space
 
 //todo Array methods important (splice,indexOf,map,reduce,filter)
@@ -227,24 +226,23 @@
 // console.log(txt.split(','));
 // console.log(txt.split(" "));
 
-
-
 //! date and time in javascript
 
-//! Date methods(get and set)
+//! Date and time methods(get and set)
 
-//there are 4 ways to create a date object 
+//there are 4 ways to create a date object
 // 1. new Date()
 //! india is 5hours 30 mins ahead of grennwich mean time
 //!  and if we add 5hr 30mins, we get our lovely INDIA TIME 💪
 // let currDate = new Date()
 // console.log(currDate);
-// console.log(new Date().toLocaleString());
-// console.log(new Date().toString());
-// console.log(Date.now());
-// console.log(new Date(dateString));
-var d = new Date(1634404753573);
-console.log(d.toLocaleString());
+// console.log(new Date().toLocaleString()); // Extact value
+// console.log(new Date().toString()); // The value shown in the chrome borswer
+// console.log(Date.now()); // millisecond from 1 january 1947
+// console.log(new Date(dateString)); //give the date and time as an
+//  aurgument and output will be in the tolocalstring format
+// var d = new Date(0);
+// console.log(d.toLocaleString());
 
-
-
+//! Date methods()
+const curDate = new Date();
