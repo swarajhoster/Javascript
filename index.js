@@ -251,3 +251,4 @@ console.log(curDate.getFullYear()); //to get the year only
 console.log(curDate.getDate()); // to get the Date only
 console.log(curDate.getDay()); // to get the day only
 console.log(curDate.getTime()); // to get the milli seconds from jan 1 1947
+console.log('now it is fucking changed ');
