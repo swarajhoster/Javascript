@@ -251,4 +251,15 @@ console.log(curDate.getFullYear()); //to get the year only
 console.log(curDate.getDate()); // to get the Date only
 console.log(curDate.getDay()); // to get the day only
 console.log(curDate.getTime()); // to get the milli seconds from jan 1 1947
+console.log(curDate.getHours());// returns the hour
+console.log(curDate.getMinutes()); // to get the time 
+console.log(curDate.getSeconds());// to get the second 
+console.log(curDate.getMilliseconds()); // to get the miili second 
+
+
+//! main one
+new Date().toLocaleTimeString() // t get only time
+new Date().toLocaleDateString() // to get only date
+new Date().toLocaleString() // to get date and time 
+
 
