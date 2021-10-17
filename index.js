@@ -263,3 +263,5 @@ new Date().toLocaleDateString() // to get only date
 new Date().toLocaleString() // to get date and time 
 
 
+//! javascript DOM is out in index.html 
+

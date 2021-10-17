@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- ! getelementbyId and function time starts -->
+    <button onclick="myFunction()">try it</button>
+    <p id="demo"></p>
+    <!-- ! getelementbyId and function time starts -->
+    <script>
+        //! getelementbyId and function time starts
+        function myFunction() { //created a function name myFunctin
+            var t = new Date() // declared and initisize t and gave the power of new Date
+            t.setHours(5) // wrote a method for it, which is setHour(5) 
+            document.getElementById("demo").innerHTML =
+                t; // now the date power is inside the variable "t", here we got 👇
+            // the ID of the element by getElementById, passesd the  the id of the p tag, and 👇
+            //   gave all the power of var t to the paragraph, now onzclick on the button the function gets called and gives the value ✅
+        }
+        //! getelementbyId and function time overs
+    </script>
+</body>
+
+</html>
