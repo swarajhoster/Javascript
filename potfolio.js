@@ -711,8 +711,8 @@
 // const colors = ['red', 'green', 'blue', 'white', 'pink'];
 
 // const myColors = ['red', 'green', 'blue', 'white','pink', 'yellow', 'black'];
-// // 2nd time add one more color on top and tell we need to write it again
-// // on myColor array too
+// 2nd time add one more color on top and tell we need to write it again
+// on myColor array too
 
 // const MyFavColors = [ ...colors, 'yellow', 'black'];
 
@@ -741,7 +741,7 @@
 
 // const person = { name: 'Fred', age: 87 };
 
-// // console.log( Object.values(person) );
+// console.log( Object.values(person) );
 // const arrObj =  Object.entries(person);
 // console.log(Object.fromEntries(arrObj));
 
@@ -1514,10 +1514,10 @@
 // how to get the indivisual Time
 
 // console.log(curTime.getTime());
-// // The getTime() method returns the number of milliseconds
+// The getTime() method returns the number of milliseconds
 // since January 1, 1970
 // console.log(curTime.getHours());
-// // The getHours() method returns the hours of a date as a
+// The getHours() method returns the hours of a date as a
 // number (0-23)
 // console.log(curTime.getMinutes());
 // console.log(curTime.getSeconds());
@@ -1592,8 +1592,8 @@
 // Math.floor()  🙋‍♂️
 // Math.floor(x) returns the value of x rounded down to its nearest integer
 
-// console.log(Math.floor(4.7));
-// console.log(Math.floor(99.1));
+console.log(Math.floor(4.7));
+console.log(Math.floor(99.1));
 
 // Math.min() 🙋‍♂️
 // Math.min() can be used to find the lowest value in a list of arguments
@@ -1973,7 +1973,7 @@
 // Jis bhi function ko hum kisi or function ke under as an arguments passed
 // krte hai then usko hum CallBack fun bolte hai
 
-// // we need to create a calculator
+// we need to create a calculator
 
 // const add = (a,b) => {
 //     return a+b;
@@ -1995,11 +1995,11 @@
 
 // console.log(calculator(5,2,subs));
 
-// // I have to do the hardcoded for each operation which is bad
-// // we will use the callback and the HOF to make it simple to use
+// I have to do the hardcoded for each operation which is bad
+// we will use the callback and the HOF to make it simple to use
 
-// // Now instead of calling each function indivisually we can call it
-// // by simply using one function that is calculator
+// Now instead of calling each function indivisually we can call it
+// by simply using one function that is calculator
 
 // console.log(calculator(5,6,add));
 // console.log(calculator(5,6,subs));
