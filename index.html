@@ -21,8 +21,30 @@
     <h1 id="heading">Click the button above to chnage my text</h1>
     <button onclick="changeHeader()">click me</button>
 
+    <button onclick="tagPresent()">know how many p tags</button>
+
     <p class="he">hellow orld</p>
     <p class="he">mdkdddl</p>
+
+    <hr />
+    <!-- <p onclick="hello()">click me</p> -->
+    <button onclick="hello()">click me</button>
+    <form action="">
+      male
+      <input type="checkbox" name="gender" id="" />
+      <br />
+      female
+      <input type="checkbox" name="gender" id="" />
+      <br />
+      other
+      <input type="checkbox" name="gender" id="" />
+      <br />
+    </form>
+
+    <hr />
+    <button onclick="jkTop()">click me</button>
+    <p class="hey">not chnaged</p>
+
     <script>
       //To show current time of the location
       var t = new Date().toLocaleTimeString();
@@ -43,17 +65,37 @@
         if (confirm("Want to visit youtube")) {
           location.href = "https://www.youtube.com/";
         } else {
-          location.href = "https://www.youtube.com/";
+          alert("chalaja bskd");
         }
       }
 
       //Function to change the text of the h1 tag
       const changeHeader = () => {
         document.getElementById("heading").innerHTML = "welcome";
+        console.log(document.getElementsByClassName("he"));
       };
 
       //Function to find the class name is present or not, present show it in log
-      const getClassName = getClassName("").innerHTML;
+      // console.log(document.getElementsByClassName("he"));
+
+      //Function to display all the tags, as given
+      function tagPresent() {
+        console.log(document.getElementsByTagName("p"));
+      }
+
+      //Function to find the number of name in the form
+      const hello = () => {
+        console.log(document.getElementsByName("gender"));
+      };
+      // console.log(document.getElementsByName("gender"));
+
+      //querySelector all in one of above
+      // for id - #id
+      // for class - .className
+      // for tag name - p , h1
+      function jkTop() {
+        document.querySelector(".hey").innerHTML = "hello changed again";
+      }
     </script>
   </body>
 </html>
