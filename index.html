@@ -20,6 +20,9 @@
 
     <h1 id="heading">Click the button above to chnage my text</h1>
     <button onclick="changeHeader()">click me</button>
+
+    <p class="he">hellow orld</p>
+    <p class="he">mdkdddl</p>
     <script>
       //To show current time of the location
       var t = new Date().toLocaleTimeString();
@@ -40,7 +43,7 @@
         if (confirm("Want to visit youtube")) {
           location.href = "https://www.youtube.com/";
         } else {
-          alert("Get lost");
+          location.href = "https://www.youtube.com/";
         }
       }
 
@@ -48,6 +51,9 @@
       const changeHeader = () => {
         document.getElementById("heading").innerHTML = "welcome";
       };
+
+      //Function to find the class name is present or not, present show it in log
+      const getClassName = getClassName("").innerHTML;
     </script>
   </body>
 </html>
