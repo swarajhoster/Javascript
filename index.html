@@ -1,23 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>test dom</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <a href="tel: +919341213201">call me 91+</a>
     <p id="time"></p>
     <p id="demo"></p>
+
+    <button onclick="goBack()">Go goBack</button>
+
+    <button onclick={me()}>alert</button>
+
+    <hr>
+
+    <h1 id="hedddllo">Click the button above to chnage my text</h1>
+    <button onclick="chnageThis()">Chnage text</button>
+
     <script>
-        var t = new Date().toLocaleTimeString();
-        document.getElementById("time").innerHTML = t
+      //To show current time of the location
+      var t = new Date().toLocaleTimeString();
+      document.getElementById("time").innerHTML = t;
 
-        var d = new Date().toLocaleDateString();
-        document.getElementById("demo").innerHTML = d
+      //To show current time of the location
+      var d = new Date().toLocaleDateString();
+      document.getElementById("demo").innerHTML = d;
+
+      //IMPORTANT FUNCTION TO GO BACK from one page to its previous page
+      function goBack() {
+        window.history.back();
+      }
+
+      //Confirm To visit youtube site !
+      function me() {
+        alert(window.location.href);
+        if (confirm("Want to visit youtube")) {
+          location.href = "https://www.youtube.com/";
+        } else {
+          alert("Get lost");
+        }
+
+        //Function to change the text of the h1 tag
+        function chnageText() {
+          document.getElementById("hello").innerHTML = "This text is chnaged "
+        }
+
+        const chnageThis = () => (
+          document.getElementById("hedddllo").innerHTML = "welcome"
+        )
+      }
     </script>
-</body>
-
+  </body>
 </html>
