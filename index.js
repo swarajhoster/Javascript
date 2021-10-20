@@ -252,26 +252,23 @@
 // console.log(curDate.getDay()); // to get the day only
 // console.log(curDate.getTime()); // to get the milli seconds from jan 1 1947
 // console.log(curDate.getHours());// returns the hour
-// console.log(curDate.getMinutes()); // to get the time 
-// console.log(curDate.getSeconds());// to get the second 
-// console.log(curDate.getMilliseconds()); // to get the miili second 
+// console.log(curDate.getMinutes()); // to get the time
+// console.log(curDate.getSeconds());// to get the second
+// console.log(curDate.getMilliseconds()); // to get the miili second
 
-
-// //! main one
+//! main one
 // new Date().toLocaleTimeString() // t get only time
 // new Date().toLocaleDateString() // to get only date
-// new Date().toLocaleString() // to get date and time 
+// new Date().toLocaleString() // to get date and time
 
+//! javascript DOM is out in index.html
 
-//! javascript DOM is out in index.html 
-
-
-//! Math objects 
+//! Math objects
 
 //! To find the value of PI
 // console.log(Math.PI);
 
-//! To find the round off value 
+//! To find the round off value
 // var pi = Math.PI;
 // let num = 34.9393
 // console.log(Math.round(pi))
@@ -280,5 +277,44 @@
 console.log(Math.floor(Math.random() * 10));
 
 function goBack() {
-    window.history.back()
+  window.history.back();
 }
+
+//! 4 ways of calling a function (check the index.html file)
+
+// 1 - onclick="alert('this is a way of directly calling a fucntion ')" 👆
+
+// 2 - writing a fucntion in js and then calling it  -- onclick="functionName()"
+//   const newFunc = () =>
+//     alert("2 way, first define the function and then call it");
+
+// 3 - by document.getElemetById('Id')
+//   const thirdWay = document.getElementById('third')
+//   thirdWay.onclick = function() {
+//     alert('3 thrid by getElementById')
+//   }
+
+
+//! what is event lisiner
+// events in js = enteraction bettween the user and the site eg:- onClick
+
+//4 - by EVENT lisener
+// 3 aurguments
+// 1 - event type.  ex = click
+//2 - function name, or can use fat arrow function
+//3 - boolean value = true or false
+//   const fourthWay =  document.querySelector('#four')
+//   fourthWay.addEventListener('click', () => (
+//     alert('4 by event listener ')
+//   ))
+
+// - by EVENT lisener
+// 3 aurguments
+// 1 - event type.  ex = click,mouseover,mouseout,resize,mousemove
+//2 - function name, or can use fat arrow function
+//3 - boolean value = true or false
+
+//what is event object 
+// the objects of the events eg:- MouseEvent 
+
+

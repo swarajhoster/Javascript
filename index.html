@@ -24,6 +24,7 @@
     <button onclick="tagPresent()">know how many p tags</button>
 
     <p class="he">hellow orld</p>
+
     <p class="he">mdkdddl</p>
 
     <hr />
@@ -40,10 +41,26 @@
       <input type="checkbox" name="gender" id="" />
       <br />
     </form>
-
     <hr />
     <button onclick="jkTop()">click me</button>
     <p class="hey">not chnaged</p>
+
+    <button onclick="document.getElementById('demmmo').innerHTML = Date()">
+      The time is?
+    </button>
+    <p id="demmmo"></p>
+
+    <hr />
+    <h2>4 ways of calling a fucntion</h2>
+    <button onclick="alert('this is a way of directly calling a fucntion')">
+      way 1
+    </button>
+
+    <button onclick="newFunc()">way 2</button>
+
+    <button id="third">way 3</button>
+
+    <button id="four">way 4</button>
 
     <script>
       //To show current time of the location
@@ -98,6 +115,31 @@
         document.querySelector(".hey").innerHTML =
           "hello changed again using querySelector";
       }
+
+      // 4 ways of calling a function
+      // 1 - onclick="alert('this is a way of directly calling a fucntion ')" 👆
+
+      // 2 - writing a fucntion in js and then calling it  -- onclick="functionName()"
+      const newFunc = () =>
+        alert("2 way, first define the function and then call it");
+
+      // 3 - by document.getElemetById('Id')
+      const thirdWay = document.getElementById("third");
+      thirdWay.onclick = function () {
+        alert("3 thrid by getElementById");
+      };
+
+      // - by EVENT lisener
+      // 3 aurguments
+      // 1 - event type.  ex = click,mouseover,mouseout,resize,mousemove
+      //2 - function name, or can use fat arrow function
+      //3 - boolean value = true or false
+
+      //what is event object
+      // the objects of the events eg:- MouseEvent
+
+      const fourthWay = document.querySelector("#four");
+      fourthWay.addEventListener("click", () => alert("4 by event listener "));
     </script>
   </body>
 </html>
