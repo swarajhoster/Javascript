@@ -2212,7 +2212,7 @@ console.log(Math.floor(99.1));
 // typeof(object_as_string_as_object);
 // "object"
 
-// 7️⃣ AJAX Call using XMLHttprequest
+// 7️⃣ AJAX Call using XMLHttprequest 
 
 // how to handled with the events and callback
 
