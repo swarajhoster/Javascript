@@ -34,6 +34,7 @@
       male
       <input type="checkbox" name="gender" id="" />
       <br />
+
       female
       <input type="checkbox" name="gender" id="" />
       <br />
@@ -45,9 +46,10 @@
     <button onclick="jkTop()">click me</button>
     <p class="hey">not chnaged</p>
 
-    <button onclick="document.getElementById('demmmo').innerHTML = Date()">
+    <button onclick="document.getElementById('demmmo').innerHTML = new Date()">
       The time is?
     </button>
+
     <p id="demmmo"></p>
 
     <hr />
@@ -61,6 +63,16 @@
     <button id="third">way 3</button>
 
     <button id="four">way 4</button>
+    <div class="dot">
+      <button id="eventL">event lisinner</button>
+    </div>
+
+    <p id="MouseTest" onmousedown="mouseFuncUp" onmouseup="mouseFuncDo">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae neque
+      tempora nulla expedita accusantium dolores molestiae. Repellat ratione
+      eligendi placeat natus sunt iure quisquam consequuntur, maiores minus a.
+      Iure vitae fuga est obcaecati quo.
+    </p>
 
     <script>
       //To show current time of the location
@@ -140,6 +152,28 @@
 
       const fourthWay = document.querySelector("#four");
       fourthWay.addEventListener("click", () => alert("4 by event listener "));
+
+      const five = document.getElementById("eventL");
+
+      const eventT = () => {
+        alert("hello from the event side");
+        console.log(event); // will return everything, click, user screen size
+        console.log(event.target);
+        console.log(event.type); //to get only the click type
+      };
+
+      five.addEventListener("click", () => {
+        eventT();
+      });
+
+      function mouseFuncUp() {
+        document.getElementById("MouseTest").style.color = "#F8B627"
+      }
+
+      function mouseFuncDo() {
+        document.getElementById("MouseTest").style.color = "#fff"
+      }
+
     </script>
   </body>
 </html>

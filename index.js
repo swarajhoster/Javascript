@@ -274,11 +274,11 @@
 // console.log(Math.round(pi))
 
 //! Random
-console.log(Math.floor(Math.random() * 10));
+// console.log(Math.floor(Math.random() * 10));
 
-function goBack() {
-  window.history.back();
-}
+// function goBack() {
+//   window.history.back();
+// }
 
 //! 4 ways of calling a function (check the index.html file)
 
@@ -293,7 +293,6 @@ function goBack() {
 //   thirdWay.onclick = function() {
 //     alert('3 thrid by getElementById')
 //   }
-
 
 //! what is event lisiner
 // events in js = enteraction bettween the user and the site eg:- onClick
@@ -314,7 +313,7 @@ function goBack() {
 //2 - function name, or can use fat arrow function
 //3 - boolean value = true or false
 
-//what is event object 
-// the objects of the events eg:- MouseEvent 
+//what is event object
+// the objects of the events eg:- MouseEvent
 
-
+// console.log(900.9 === 300.3 * 3);
