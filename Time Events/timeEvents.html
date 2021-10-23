@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tiem based like setinterval,timeout,ect...</title>
+    <style>
+      .main {
+        width: 600px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid red;
+        text-align: center;
+      }
+
+      .he {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ! Time based events  -->
+
+    <!-- ? Time based events  -->
+    <!-- ? Time based events  -->
+    <!-- ? Time based events  -->
+    <!-- ? Time based events  -->
+    <div class="he">
+      <div class="main">
+        <div>
+          <button id="btn" onclick="getout()">Click here</button>
+
+          <p id="showName"></p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const ShowName = document.querySelector("#showName");
+      const buttonP = document.querySelector("#btn");
+      function getout() {
+        ShowName.innerHTML = "loading ...🔃";
+        setInterval(() => {
+          ShowName.innerHTML = "time is up";
+        }, 1000);
+      }
+      buttonP.addEventListener("click", getout);
+    </script>
+  </body>
+</html>

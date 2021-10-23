@@ -317,3 +317,16 @@
 // the objects of the events eg:- MouseEvent
 
 // console.log(900.9 === 300.3 * 3);
+
+
+
+// What is object
+
+let arr = {
+    name : 'swaraj kumar',
+    class : 10,
+    getData : function alertIt() {
+        console.log('Fucntion guys ');
+    }
+}
+console.log(arr.getData());
