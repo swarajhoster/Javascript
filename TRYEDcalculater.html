@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find out the sum</title>
+    <style>
+      .main {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .sec {
+        width: 600px;
+        height: 400px;
+        border: 2px solid purple;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="sec">
+        <div class="th">
+          <label for=""><strong>Enter the value of a </strong></label>
+          <input type="tel" name="" id="sumA" />
+
+          <br />
+
+          <label for=""><strong>Enter the value of b </strong></label>
+          <input type="tel" name="" id="sumB" onchange="selectElement()" />
+          <p id="result"></p>
+        </div>
+      </div>
+    </div>
+    <script>
+      const selectElement = () => {
+        const ValueA = document.getElementById("sumA").value;
+        const ValueB = document.getElementById("sumB").value;
+        const total = ValueA + ValueB;
+        const Result = (document.getElementById(
+          "result"
+        ).innerHTML = `the totol sum is ${total}`);
+        document.getElementById("sumA").value = "";
+        document.getElementById("sumB").value = "";
+      };
+    </script>
+  </body>
+</html>

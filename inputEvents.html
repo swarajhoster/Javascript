@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .resut {
+        font-size: 30px;
+        font-weight: 900;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-div">
+      <div>
+        <label for="">Enter name here 👇</label>
+        <input type="text" name="" id="ice" />
+      </div>
+      <label for=""
+        >chose an iceCream flavour you want
+        <select name="iceCreams" id="iceCreams"  onchange="selectElement()">
+          <option value="Selete from the options given below">
+            Selete one
+          </option>
+          <option value="chocolate">chocolate</option>
+          <option value="vanila">vanila</option>
+          <option value="Sardine">Sardine</option>
+        </select>
+      </label>
+      <br />
+      <div class="resut" id="result"></div>
+    </div>
+    <script>
+      const selectElement = () => {
+        const inputChange = document.getElementById("ice").value;
+        const iceCream = document.getElementById("iceCreams").value;
+
+        const reSult = (document.getElementById(
+          "result"
+        ).innerHTML = `Mr.${inputChange} flavour selected :  ${iceCream}`);
+
+        // console.log(
+        //   `the name is ${inputChange} and the selected option is ${iceCream}`
+        // );
+        document.getElementById("ice").value = "";
+      };
+
+      //! BY USING ADDEVENTLISINER()
+      // const iceCream = document.getElementById("iceCreams");
+      // iceCream.addEventListener("change", () => {
+      //   const inputChange = document.getElementById("ice").value;
+      //   const iceCream = document.getElementById("iceCreams").value;
+      //   const reSult = (document.getElementById(
+      //     "result"
+      //   ).innerHTML = `your name is ${inputChange} and the flavour seleted is ${iceCream}`);
+      //   document.getElementById("ice").value = "";
+      // });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyboard events </title>
+</head>
+<body>
+    <div class="main-div">
+        <div class="">
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <br>
+            <input type="text" name="" class="effect-1" id="" onkeypress="keyPres()" onkeydown="keyDown()" onkeyup="keyUp()">
+            <br>
+            <p id="keys"></p>
+        </div>
+    </div>
+    <script>
+        // const keyPres = () => {
+        //     document.getElementById("keys").innerHTML = `you pressed     ${event.key} and it's code is ${event.code}`
+        // }
+
+
+        keyDown = () => {
+            document.getElementById("keys").innerHTML = 'the key is unReleased'
+        }
+
+        keyUp = () => {
+            document.getElementById("keys").innerHTML = 'the key is releaed'
+        }
+    </script>
+</body>
+</html>
