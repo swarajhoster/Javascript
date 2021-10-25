@@ -15,7 +15,7 @@
 //! this method is know as splice()
 //! Syntax array.splice()
 //? 3 parameters the present in the splice
-//? 1 - which place you want to add the number
+//? 1 - which place you want to add the numberkz
 //? 2- which array element you want to remove it indexNUM else ley it be 0
 //? 3 from that number onwards which u want to remove its number
 // ! array crud problem with single method splice() starts
@@ -40,7 +40,7 @@
 //   console.log("404 ERROR fOUND 💀");
 // }
 // indexOfMarch != -1 ? month.splice(indexOfMarch,indexOfMarch,"yes bro") : '404 Data not found'
-// console.log(month);    using ternary operator
+// console.log(month); //   using ternary operator
 // const string = "A short program to find the array replace or delete ";
 // console.log(updatedData);
 // ! array crud problem with single method splice() starts
@@ -318,15 +318,79 @@
 
 // console.log(900.9 === 300.3 * 3);
 
-
-
 // What is object
 
-let arr = {
-    name : 'swaraj kumar',
-    class : 10,
-    getData : function alertIt() {
-        console.log('Fucntion guys ');
-    }
-}
-console.log(arr.getData());
+// let arr = {
+//   name: {
+//     myName: "swaraj kumar",
+//     channelName: "icoders",
+//   },
+//   class: 10,
+//   getData() {
+//     console.log(`My name is ${arr.name.myName}  and i study in ${arr.class}`); //! can write function like this
+//   },
+// };
+// console.log(arr.name);
+// arr.getData(); // calling the data
+
+// console.log(arr.name.channelName);
+
+//! what is 'this' ,it window object
+// console.log(this);
+
+// const obj = {
+//   myAge: 15,
+//   name: "sk sabir boss",
+//   myName :() => {
+//     console.log(this);
+//   },
+// };
+
+// obj.myName();
+
+// let arr = {
+//   name: {
+//     myName: "swaraj kumar",
+//     channelName: "icoders",
+//   },
+//   class: 10,
+//   getData() {
+//     console.log(`My name is ${this.name.myName} and i study in ${arr.class}`); //! can write function like this
+//   },
+// };
+
+// arr.getData();
+
+//! Array descructuring
+
+// let bioData = ["vinod", "thapa", 26];
+// let fName = bioData[0];
+// let lName = bioData[1];    //! wrong way, DO THIS INSTEAD 👇
+// let age = bioData[2];
+
+// console.log(fName);
+
+//! Array descruturing 👇
+
+// let bioData = ["vinod", "thapa", 26];
+// let [fName, lName, age] = bioData;
+// let [name = 0,name = 1,name = 2] = the array name
+
+// console.log(fName);
+
+// ?Adding values in it
+// let bioData = ["vinod", "thapa", 26];
+// let [fName, lName, age, myDegree = "MCS"] = bioData;
+// console.log(myDegree);
+
+//! object descruturing 👇
+
+// const bioData = {
+//   fName: "swaraj",
+//   lName: "singh",
+//   age: 25,
+// };
+// console.log(bioData.age); //! wrong way
+
+// let { fName, lName, age, myDegree = "MCS" } = bioData;
+// console.log(age);
