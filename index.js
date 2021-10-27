@@ -413,14 +413,57 @@
 
 // console.log(bioData);
 
-let myName = "swaraj";
-let myAge = 26;
+// let myName = "swaraj";
+// let myAge = 26;
 
-const bioData = {
-  myName: myName,
-  myAge: myAge,
-};
+// const bioData = {
+//   myName: myName,
+//   myAge: myAge,
+// };
 
-const bioData = { myName, myAge };
+// const myBio = { myName, myAge };
 
-console.log(bioData);
+// console.log(myBio);
+
+//! ES7 features
+// 1 : incudes meathod in Array
+
+// const arr = ["pink", "red"];
+// const isPresent = arr.includes("DSFsDFdsf");
+// console.log(isPresent);
+
+// if (isPresent == true) {
+//   alert("login sucess");
+// } else {
+//   alert("username not found, signin to use the app");
+// }
+
+// 2 : expoential operators
+// console.log(2 ** 2); // number of which power to find
+// power of the number s
+
+//! ES8 features
+
+// let message = "yo, lets 💛 go !";
+// let changed = message.padStart(6);
+// console.log(changed);
+
+// let obj = { name: "swaraj", age: 34 };
+// console.log(Object.values(obj)); // to find the values of the objects
+// console.log(Object.keys(obj)); // to find the keys of the object
+
+// let obj = {name : 'swaraj' , age : 34}
+// console.log(Object.entries(obj));  // to convert object into set of array
+
+//! ES2018
+// let obj = { name: "swaraj", age: 34 };
+// let obj2 = { ...obj, degree: "MSC" }; // adding objects in objects like spread operators
+
+// console.log(obj2);
+// console.log(Object.keys(obj2));
+// console.log(Object.values(obj2));
+
+//! ES2019
+
+let arr = ["dogs", ["sheep", ["cow"]]]
+console.log(arr);

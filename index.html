@@ -74,6 +74,10 @@
       Iure vitae fuga est obcaecati quo.
     </p>
 
+    <hr />
+
+    <button onclick="func()">Click me</button>
+
     <script>
       //To show current time of the location
       var t = new Date().toLocaleTimeString();
@@ -86,6 +90,11 @@
       //IMPORTANT FUNCTION TO GO BACK from one page to its previous page
       function goBack() {
         window.history.back();
+      }
+
+      //To over write the button
+      function func() {
+        document.write("Welcome");
       }
 
       //Confirm To visit youtube site !
@@ -167,13 +176,12 @@
       });
 
       function mouseFuncUp() {
-        document.getElementById("MouseTest").style.color = "#F8B627"
+        document.getElementById("MouseTest").style.color = "#F8B627";
       }
 
       function mouseFuncDo() {
-        document.getElementById("MouseTest").style.color = "#fff"
+        document.getElementById("MouseTest").style.color = "#fff";
       }
-
     </script>
   </body>
 </html>
