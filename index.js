@@ -1,5 +1,11 @@
 //! In `` we can add unlimited space
 
+//! Arrays method
+
+//! to flat many arr into one
+//! flat(Infinity)
+// console.log(arr.flat(Infinity));
+
 //todo Array methods important (splice,indexOf,map,reduce,filter)
 //  const arr1 = ["apple", "bannana", "cherry", "narial"];
 //  const mango =['mango','rim']
@@ -464,6 +470,33 @@
 // console.log(Object.values(obj2));
 
 //! ES2019
+// const arr = [
+//   ["zone_1", "zone_2"],
+//   ["zone_3", "zone_4"],
+//   ["zone_5", "zone_6"],
+//   ["zone_7", ["zone_8", ["zone_9", ["zone_10", "zone_11"]]]],
+// ];
+// console.log(arr.flat(Infinity));
 
-let arr = ["dogs", ["sheep", ["cow"]]]
-console.log(arr);
+//! ES2020
+//! BigInt
+
+// let num = Number.MAX_SAFE_INTEGER;
+// console.log(typeof 9007199254740991n);
+
+//! ?? to check wether the value is null or not
+// const foo = null ?? ''
+// console.log(foo);
+
+//! ES2014
+
+//! "use strict";
+
+// "use strict";
+// let x = 99;
+// console.log(x);
+
+
+console.log(myName);
+var myName;
+myName = 'vinod'
