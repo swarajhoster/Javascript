@@ -496,7 +496,29 @@
 // let x = 99;
 // console.log(x);
 
+// console.log(myName);
+// var myName;
+// myName = 'vinod'
 
-console.log(myName);
-var myName;
-myName = 'vinod'
+//! JSON
+
+//! Stringyfy
+// Used to convert js object into JSON
+
+const obj = { name: "sk", type: "true", age: "15" };
+const jsoN = JSON.stringify(obj);
+console.log(jsoN);
+console.log(typeof jsoN);
+
+//! Stringyfy
+// Used to convert JSON object into js
+// const jsN = { name: "sk", type: "true", age: "15" };
+// const Cvt = JSON.parse(jsN);
+// console.log(Cvt);
+// console.log(typeof Cvt);
+
+var object_as_string_as_object = JSON.parse(jsoN);
+// {key_1: "some text", key_2: true, key_3: 5}
+
+console.log(object_as_string_as_object);
+
