@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        text-align: center;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: lightskyblue;
+      }
+      input {
+        width: 2rem;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10rem;
+        width: 30rem;
+        border-radius: 9px;
+        background-color: white;
+      }
+      /* form {
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form id="tempCalc" onsubmit="calculate(); return false">
+        <label for="temp"
+          >Please enter the temperature u like to convert.</label
+        >
+        <br />
+        <input type="number" name="temp" id="temp" />
+        <select name="temp_diff" id="temp_diff">
+          <option value="cel">Celsius</option>
+          <option value="fah">Fahrenheit</option>
+        </select>
+        <br />
+        <input type="submit" name="temp" /> <br />
+        <span id="resultContainer"></span>
+      </form>
+    </div>
+
+    <script>
+      var calculate = () => {
+        var numberTemp = document.getElementById("temp").value;
+        console.log(numberTemp);
+
+        var tempSelected = document.getElementById("temp_diff");
+        var valueTemp = temp_diff.options[tempSelected.selectedIndex].value;
+        console.log(valueTemp);
+
+        var celtofah = (cel) => {
+          var fahrenheit = Math.round((cel * 9) / 5 + 32);
+          return fahrenheit;
+        };
+
+        var fahtocel = (fah) => {
+          var celsius = Math.round(((fah - 32) * 5) / 9);
+          return celsius;
+        };
+
+        var result;
+        if (valueTemp == "cel") {
+          result = celtofah(numberTemp);
+          document.getElementById(
+            "resultContainer"
+          ).innerHTML = `${result} Fahrenheit `;
+        } else {
+          result = fahtocel(numberTemp);
+          document.getElementById(
+            "resultContainer"
+          ).innerHTML = `${result} celsius `;
+        }
+      };
+    </script>
+  </body>
+</html>
