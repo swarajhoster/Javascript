@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: lightseagreen;
+      }
+
+      .container {
+        padding: 20px;
+        text-align: center;
+        border: 2px solid lightseagreen;
+        border-radius: 9px;
+        background-color: white;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      hnnnn
+      <h1>I am temperature <span id="temp" class="temp"></span></h1>
+    </div>
+    <script>
+      //         <h1>I am temperature <span id="temp" class="temp"></span></h1>
+      const tempLoad = () => {
+        let temp = document.getElementById("temp");
+        temp.innerHTML = "&#xf2cb";
+
+        setTimeout(() => {
+          temp.innerHTML = "&#xf2ca";
+          temp.style.color = "yellow";
+        }, 1000);
+
+        setTimeout(() => {
+          temp.innerHTML = "&#xf2c9";
+        }, 2000);
+
+        setTimeout(() => {
+          temp.innerHTML = "&#xf2c8";
+        }, 3000);
+
+        setTimeout(() => {
+          temp.innerHTML = "&#xf2c8";
+          temp.style.color = "red";
+        }, 4000);
+      };
+      tempLoad();
+
+      setInterval(tempLoad, 5000);
+    </script>
+  </body>
+</html>

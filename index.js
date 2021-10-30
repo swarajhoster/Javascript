@@ -507,8 +507,8 @@
 
 const obj = { name: "sk", type: "true", age: "15" };
 const jsoN = JSON.stringify(obj);
-console.log(jsoN);
-console.log(typeof jsoN);
+// console.log(jsoN);
+// console.log(typeof jsoN);
 
 //! Stringyfy
 // Used to convert JSON object into js
@@ -520,5 +520,7 @@ console.log(typeof jsoN);
 var object_as_string_as_object = JSON.parse(jsoN);
 // {key_1: "some text", key_2: true, key_3: 5}
 
-console.log(object_as_string_as_object);
+// console.log(object_as_string_as_object);
 
+const qestion = null ?? null;
+console.log(qestion);
