@@ -4,81 +4,79 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Unlimited qoutes Generator</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        height: 100vh;
-        background-color: #326ba8;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .container {
-        border-radius: 9px;
-        text-align: center;
-        background-color: white;
-        width: 30rem;
-        height: 20rem;
-      }
-
-      h3 {
-        color: gray;
-      }
-
-      .joke {
-        padding: 1rem;
-        font-size: larger;
-        font-weight: 900;
-        margin-top: 2rem;
-      }
-
-      .btn {
-        font-size: 1rem;
-        width: 6rem;
-        height: 3rem;
-        font-weight: 600;
-        text-align: center;
-        background-color: orange;
-        border: 1px solid orange;
-        border-radius: 5px;
-        box-shadow: orange;
-      }
-      .btn:hover {
-        background-color: white;
-        color: orange;
-      }
-    </style>
+    <link
+      rel="icon"
+      href="https://png.pngtree.com/png-vector/20191028/ourmid/pngtree-information-icon-for-your-design-websites-and-projects-png-image_1889224.jpg"
+    />
+    <title>Unlimited Quote Genrator</title>
   </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      width: 450px;
+      background: #212121;
+      border-radius: 9px;
+      box-shadow: 0 0 30px #2121216b;
+      padding: 3.5em 2.5em;
+      color: white;
+      position: relative;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .container .author {
+      margin-top: 1em;
+      background: linear-gradient(to right, #16a085, #f4d03f);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .btn {
+      width: 150px;
+      height: 40px;
+      position: absolute;
+      bottom: -8%;
+      background: linear-gradient(to right, #16a085, #f4d03f);
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 1.3em;
+      box-shadow: -10px 20px 50px #16a0848e, 10px 20px 50px #f4d03f98;
+    }
+  </style>
   <body>
     <div class="container">
-      <p id="qoute"></p>
-      <p id="author"></p>
-      <button class="btn" id="btn" onclick="getQoute()">next qoute</button>
+      <p id="quote">Quote is loading ...</p>
+      <p id="author" class="author"></p>
+      <button class="btn" onclick="getQuote()">New</button>
     </div>
-    <!-- ! API : https://quotes.stormconsultancy.co.uk/random.json -->
     <script>
-      const Qoute = document.getElementById("qoute");
+      const Quote = document.getElementById("quote");
       const Author = document.getElementById("author");
 
-      function getQoute() {
-        fetch("https://quotes.stormconsultancy.co.uk/random.json")
+      const getQuote = () => {
+        fetch("http://quotes.stormconsultancy.co.uk/random.json")
           .then((res) => {
             return res.json();
           })
           .then((data) => {
-            Qoute.innerHTML = data.qoute;
+            Quote.innerHTML = data.quote;
             Author.innerHTML = `- ${data.author}`;
           });
-      }
-      getQoute();
+      };
+      getQuote();
     </script>
-    <script></script>
   </body>
 </html>
-
-<!-- 69 78 -->
